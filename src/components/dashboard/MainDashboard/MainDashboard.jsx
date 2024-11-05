@@ -5,7 +5,7 @@ import TotalOrderByOutlet from "../TotalOrderByOutlet/TotalOrderByOutlet";
 
 const MainDashboard = ({ onToggleSidebar }) => {
     return (
-        <div className="relative w-full md:w-dashboard">
+        <div className="relative w-full md:w-dashboard h-[100vh] overflow-y-auto">
             <div className="absolute top-0 left-0">
                 <div className="block md:hidden">
                     <button
@@ -45,7 +45,7 @@ const MainDashboard = ({ onToggleSidebar }) => {
                 </div>
 
                 {/* charts part */}
-                <div className="charts grid grid-cols-2 gap-3 mx-2 md:mx-10 mt-3">
+                <div className="charts grid grid-cols-1 lg:grid-cols-2 gap-3 mx-2 md:mx-10 mt-3">
                     <TotalOederBySource />
                     <TotalOrderByOutlet />
                 </div>

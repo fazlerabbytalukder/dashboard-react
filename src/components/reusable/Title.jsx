@@ -2,7 +2,7 @@ import FilterButton from "./FilterButton";
 
 const Title = ({ titleMain, titleSub, filter }) => {
     return (
-        <div className="flex justify-between items-center">
+        <div className="flex flex-col 2xl:flex-row justify-between items-start 2xl:items-center gap-2">
             <h3 className="text-xl font-bold text-[#222]"><span className="border-b-2 border-b-primary">{titleMain}</span> {titleSub}</h3>
             {filter ? (
                 <div className="flex items-center gap-2">
