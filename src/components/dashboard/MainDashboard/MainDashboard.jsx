@@ -1,3 +1,4 @@
+import CustomerTable from "../../CustomerTable/CustomerTable";
 import Brands from "../Brands/Brands";
 import Stats from "../Stats/Stats";
 import TotalOederBySource from "../TotalOederBySource/TotalOederBySource";
@@ -48,6 +49,11 @@ const MainDashboard = ({ onToggleSidebar }) => {
                 <div className="charts grid grid-cols-1 lg:grid-cols-2 gap-3 mx-2 md:mx-10 mt-3">
                     <TotalOederBySource />
                     <TotalOrderByOutlet />
+                </div>
+
+                {/* customer table */}
+                <div className="customer-table mx-2 md:mx-10 mt-3">
+                    <CustomerTable />
                 </div>
             </div>
         </div>
