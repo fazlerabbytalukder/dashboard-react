@@ -67,32 +67,12 @@
     transform: translateY(-3px);
 }
 
-/* .swiper-button-next::before,
-.swiper-button-prev::before {
-    content: '';
-    position: absolute;
-    top: -23px;
-    left: 0;
-    height: 260%;
-    width: 133%;
-    background: linear-gradient(to left, rgb(224, 224, 224), rgba(255, 91, 54, 0));
-    z-index: 10;
-} */
-
-
 .gradient-background {
     position: absolute;
-    /* Ensure it overlays the Swiper */
     top: 0;
-    /* Align to top */
     right: 0;
-    /* Align to right */
     height: 100%;
-    /* Full height of the parent */
     width: 23.33%;
-    /* Adjust the width as needed */
     background: linear-gradient(to left, rgba(255, 90, 54, 0.7), rgba(255, 90, 54, 0.2));
-    /* Gradient colors */
     z-index: 0;
-    /* Behind the swiper */
 }
