@@ -1,4 +1,5 @@
 import Brands from "../Brands/Brands";
+import Stats from "../Stats/Stats";
 
 const MainDashboard = ({ onToggleSidebar }) => {
     return (
@@ -31,8 +32,14 @@ const MainDashboard = ({ onToggleSidebar }) => {
                 </div>
             </div>
             <div className="main-part">
+                {/* brands part  */}
                 <div className="brands">
                     <Brands />
+                </div>
+
+                {/* stats part */}
+                <div className="stats">
+                    <Stats />
                 </div>
             </div>
         </div>

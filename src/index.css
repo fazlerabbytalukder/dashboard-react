@@ -18,6 +18,22 @@
     border-top: 8px solid #ff5a36;
 }
 
+.stats-card {
+    @apply border-r-0 lg:border-r-2 border-r-[#D2D2D2]
+}
+
+.stats-card span {
+    @apply text-base xl:text-xl text-secondary text-left
+}
+
+.stats-card h3 {
+    @apply text-3xl xl:text-4xl text-primary font-bold text-left
+}
+
+.stats-card:last-child {
+    @apply border-r-0
+}
+
 .swiper-button-disabled {
     opacity: 0 !important;
 }
