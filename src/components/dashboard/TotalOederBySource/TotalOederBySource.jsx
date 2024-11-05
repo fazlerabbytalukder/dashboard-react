@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Chart from 'react-apexcharts';
+import Title from "../../reusable/Title";
 
 const TotalOederBySource = () => {
     const [chartOptions, setChartOptions] = useState({
@@ -35,12 +36,17 @@ const TotalOederBySource = () => {
 
 
     return (
-        <div className="px-[25px] py-[15px] bg-white rounded-[15px]">
+        <div className="px-[25px] pt-[15px] bg-white rounded-[15px]">
+            <Title
+                titleMain="Total order by"
+                titleSub="source"
+                filter={true}
+            />
             <Chart
                 options={chartOptions}
                 series={chartSeries}
                 type="line"
-                height={350}
+                height={250}
             />
         </div>
     );
