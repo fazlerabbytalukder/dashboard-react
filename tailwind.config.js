@@ -10,6 +10,9 @@ export default {
         primary: '#F15B25',
         secondary: '#6F6F6F',
         backColor: '#F8F8F8'
+      },
+      height: {
+        sidebar: 'calc(100vh - 97px)',
       }
     },
   },

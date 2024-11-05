@@ -13,6 +13,7 @@ const Sidebar = ({ isOpen, onClose }) => {
             className={`fixed inset-y-0 top-0 z-30 h-[100vh] w-[365px] transform bg-white transition-transform duration-200 ${isOpen ? "translate-x-0" : "-translate-x-full"
                 } md:relative md:translate-x-0`}
         >
+            {/* close button  */}
             <div className="block md:hidden">
                 <button
                     type="button"
@@ -36,12 +37,16 @@ const Sidebar = ({ isOpen, onClose }) => {
                     <span className="sr-only">Close sidebar</span>
                 </button>
             </div>
+
+            {/* logo section  */}
             <div className="bg-primary flex justify-center items-center py-[14px]">
                 <NavLink to={ROUTES.HOME}>
                     <img src={logo} alt="logo" />
                 </NavLink>
             </div>
-            <div className="sidebar-links flex h-full flex-col overflow-y-auto px-[55px] pt-[50px] space-y-[20px]">
+
+            {/* all nav links  */}
+            <div className="sidebar-links flex h-sidebar flex-col overflow-y-auto px-[55px] pt-[50px] pb-[20px] space-y-[20px]">
                 <NavLink
                     to={ROUTES.HOME}
                     className={({ isActive }) =>
