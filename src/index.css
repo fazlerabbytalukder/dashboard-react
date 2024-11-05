@@ -1,3 +1,66 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.brand-card {
+    @apply flex items-center justify-center text-xl gap-2 border border-[#DEDEDE] rounded-[15px] w-full py-[10px] h-full
+}
+
+.brand-card.active {
+    @apply border-primary bg-[#ffe5dc] font-bold relative;
+}
+
+.brand-card.active::after {
+    @apply absolute bottom-[-8px] left-1/2 transform -translate-x-1/2;
+    content: "";
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #ff5a36;
+}
+
+.swiper-button-disabled {
+    opacity: 0 !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: none;
+}
+
+.swiper-button-next {
+    background-color: #ff5a36;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 10px;
+    top: 75%;
+    transform: translateY(-75%);
+}
+
+.swiper-button-next::after {
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>');
+    transform: translateY(-3px);
+}
+
+.swiper-button-prev {
+    background-color: #ff5a36;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 10px;
+    top: 75%;
+    transform: translateY(-75%);
+}
+
+.swiper-button-prev::after {
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7"/></svg>');
+    transform: translateY(-3px);
+}

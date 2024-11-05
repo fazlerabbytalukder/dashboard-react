@@ -1,6 +1,8 @@
+import Brands from "../Brands/Brands";
+
 const MainDashboard = ({ onToggleSidebar }) => {
     return (
-        <div className="relative">
+        <div className="relative w-full md:w-dashboard">
             <div className="absolute top-0 left-0">
                 <div className="block md:hidden">
                     <button
@@ -28,7 +30,11 @@ const MainDashboard = ({ onToggleSidebar }) => {
                     </button>
                 </div>
             </div>
-            <p>main dashbaord</p>
+            <div className="main-part">
+                <div className="brands">
+                    <Brands />
+                </div>
+            </div>
         </div>
     );
 };
