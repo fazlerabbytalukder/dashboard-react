@@ -1,7 +1,9 @@
 const Sidebar = ({ isOpen, onClose }) => {
     return (
-        <div className={`fixed inset-y-0 top-0 z-30 h-[100vh] w-[365px] transform bg-white transition-transform duration-200 ${isOpen ? "translate-x-0" : "-translate-x-full"
-            } md:relative md:translate-x-0`}>
+        <div
+            className={`fixed inset-y-0 top-0 z-30 h-[100vh] w-[365px] transform bg-white transition-transform duration-200 ${isOpen ? "translate-x-0" : "-translate-x-full"
+                } md:relative md:translate-x-0`}
+        >
             <div className="block md:hidden">
                 <button
                     type="button"

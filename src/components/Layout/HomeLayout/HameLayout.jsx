@@ -9,10 +9,20 @@ const HameLayout = () => {
         setIsSidebarOpen(!isSidebarOpen);
     };
 
+    const closeSidebar = () => {
+        setIsSidebarOpen(false);
+    };
+
 
     return (
         <div className="flex h-full overflow-y-auto bg-backColor">
             <Sidebar isOpen={isSidebarOpen} onClose={toggleSidebar} />
+            {isSidebarOpen && (
+                <div
+                    onClick={closeSidebar}
+                    className="fixed inset-0 z-20 bg-black opacity-40 md:hidden"
+                ></div>
+            )}
             <MainDashboard onToggleSidebar={toggleSidebar} />
         </div>
     );
