@@ -13,7 +13,7 @@ export default {
       },
       height: {
         sidebar: 'calc(100vh - 97px)',
-        slider: 'calc(100% - 10px)',
+        slider: 'calc(100% - 11px)',
       },
       width: {
         dashboard: 'calc(100vw - 365px)',

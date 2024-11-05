@@ -9,7 +9,8 @@ import brandtwo from '../../../assets/wrappo.png';
 
 const Brands = () => {
     return (
-        <div className='ml-10 mt-[50px] relative'>
+        <div className='ml-2 md:ml-10 mt-[50px] relative'>
+            <div className="absolute top-0 right-0 h-slider w-[200px] bg-gradient-to-l from-[#ff5b361c] to-transparent z-0"></div>
             <Swiper
                 className='pb-3'
                 modules={[Navigation]}
@@ -19,7 +20,7 @@ const Brands = () => {
                 scrollbar={{ draggable: true }}
                 breakpoints={{
                     320: {
-                        slidesPerView: 1,
+                        slidesPerView: 2,
                         spaceBetween: 10,
                     },
                     640: {
@@ -27,11 +28,11 @@ const Brands = () => {
                         spaceBetween: 10,
                     },
                     768: {
-                        slidesPerView: 3,
+                        slidesPerView: 2,
                         spaceBetween: 10,
                     },
                     1024: {
-                        slidesPerView: 4,
+                        slidesPerView: 3,
                         spaceBetween: 10,
                     },
                     1280: {
