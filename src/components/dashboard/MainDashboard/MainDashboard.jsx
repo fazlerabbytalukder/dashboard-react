@@ -1,5 +1,7 @@
 import Brands from "../Brands/Brands";
 import Stats from "../Stats/Stats";
+import TotalOederBySource from "../TotalOederBySource/TotalOederBySource";
+import TotalOrderByOutlet from "../TotalOrderByOutlet/TotalOrderByOutlet";
 
 const MainDashboard = ({ onToggleSidebar }) => {
     return (
@@ -40,6 +42,12 @@ const MainDashboard = ({ onToggleSidebar }) => {
                 {/* stats part */}
                 <div className="stats">
                     <Stats />
+                </div>
+
+                {/* charts part */}
+                <div className="charts grid grid-cols-2 gap-3 mx-2 md:mx-10 mt-3">
+                    <TotalOederBySource />
+                    <TotalOrderByOutlet />
                 </div>
             </div>
         </div>
